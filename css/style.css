@@ -3,6 +3,7 @@
 :root{
    --purple:#ff7a00ff;
    --red:#c0392b;
+   --orange:#f39c12;
    --black:#333;
    --white:#fff;
    --light-color:#666;
@@ -46,6 +47,22 @@ html{
 section{
    padding:3rem 2rem;
 }
+.empty{
+   padding:1.5rem;
+   text-align: center;
+   border:var(--border);
+   background-color: var(--white);
+   color:var(--red);
+   font-size: 2rem;
+}
+
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 4rem;
+}
 
 .message{
    position: sticky;
@@ -77,7 +94,9 @@ section{
 }
 
 .btn,
-.delete-btn{
+.option-btn,
+.delete-btn,
+.white-btn{
    display: inline-block;
    margin-top: 1rem;
    padding:1rem 3rem;
@@ -86,12 +105,30 @@ section{
    font-size: 1.8rem;
    border-radius: .5rem;
    text-transform: capitalize;
-   background-color: var(--red);
 }
 
 .btn:hover,
+.option-btn:hover,
 .delete-btn:hover{
    background-color: var(--black);
+}
+
+.white-btn,
+.btn{
+   background-color: var(--purple);
+}
+
+.option-btn{
+   background-color: var(--orange);
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.white-btn:hover{
+   background-color: var(--white);
+   color:var(--black);
 }
 
 .form-container{
@@ -269,6 +306,67 @@ section{
       margin:2rem;
    }
 
+}
+
+.home .content{
+   text-align: center;
+   width: 60rem;
+}
+
+.home .content p{
+   font-size:1.8rem;
+   color: #374151;
+   padding:1rem 0;
+   line-height: 1.5;
+}
+
+.products .box-container{
+   max-width: 1200px;
+   margin:0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   align-items: flex-start;
+   gap:1.5rem;
+   justify-content: center;
+}
+
+.products .box-container .box{
+   border-radius: .5rem;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   padding:2rem;
+   text-align: center;
+   border:var(--border);
+   position: relative;
+}
+
+.products .box-container .box .image{
+   height: 30rem;
+}
+
+.products .box-container .box .name{
+   padding:1rem 0;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.products .box-container .box .qty{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   border-radius: .5rem;
+   border:var(--border);
+   margin:1rem 0;
+   font-size: 2rem;
+}
+
+.products .box-container .box .price{
+   position: absolute;
+   top:1rem; left:1rem;
+   border-radius: .5rem;
+   padding:1rem;
+   font-size: 2.5rem;
+   color:var(--white);
+   background-color: var(--red);
 }
 
 .footer{
