@@ -131,6 +131,17 @@ section{
    color:var(--black);
 }
 
+.heading{
+   min-height: 30vh;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   text-align: center;
+   background: url(../image/header_pic.jpg);
+}
+
 .heading h3{
    font-size: 5rem;
    color:rgb(255, 255, 255);
@@ -478,6 +489,27 @@ section{
    font-size: 2rem;
    color:var(--black);
    margin-top: 1rem;
+}
+
+.search-form form{
+   max-width: 1200px;
+   margin:0 auto;
+   display: flex;
+   gap:1rem;
+}
+
+.search-form form .btn{
+   margin-top: 0;
+}
+
+.search-form form .box{
+   width: 100%;
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+   font-size: 2rem;
+   color:var(--black);
+   background-color: var(--light-bg);
+   border-radius: .5rem;
 }
 
 .footer{
