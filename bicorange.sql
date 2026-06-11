@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2025 at 08:54 AM
+-- Generation Time: Jun 11, 2026 at 07:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -51,14 +51,6 @@ CREATE TABLE `message` (
   `message` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `message`
---
-
-INSERT INTO `message` (`id`, `user_id`, `name`, `email`, `number`, `message`) VALUES
-(11, 13, 'Dear Devil', 'pranto8146@gmail.com', '01715613513', 'joy bangla, joy bongoboltu'),
-(12, 11, 'Pranto', 'pranto123@gmail.com', '01874108321', 'hi \r\nim satisfied with the service\r\n');
-
 -- --------------------------------------------------------
 
 --
@@ -78,15 +70,6 @@ CREATE TABLE `orders` (
   `placed_on` varchar(50) NOT NULL,
   `payment_status` varchar(20) NOT NULL DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `orders`
---
-
-INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `method`, `address`, `total_products`, `total_price`, `placed_on`, `payment_status`) VALUES
-(18, 11, 'Raphi', '01847415879', 'admin@cafenoor.com', 'bkash', 'flat no. 23, 232, asfasfas, Tegagafasd - 232323', ', Hello Cat Brown (2) , BE WELL BEE (4) ', 1620, '28-Sep-2025', 'completed'),
-(19, 13, 'Dear Devil', '01715613513', 'pranto8146@gmail.com', 'cash on delivery', 'flat no. 123, New market, dhaka, Bangladesh - 1000', ', Hello Cat Brown (5) ', 3250, '29-Sep-2025', 'completed'),
-(20, 11, 'Pranto', '01874108321', 'pranto123@gmail.com', 'Nagad', 'flat no. 14, 78, Dhgaka, Tejgaon IA - 1208', ', Mirror Case 2.0 (1) , Love Case (Paste) (1) , Venom Case (1) , Love Case (Brown) (1) , Leather SpiderMan (3) , SpiderMan (white) (4) ', 5089, '29-Sep-2025', 'completed');
 
 -- --------------------------------------------------------
 
